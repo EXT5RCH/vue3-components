@@ -6,7 +6,9 @@
     "build": "vue-tsc --noEmit && vite build",
     "serve": "vite preview",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "predeploy": "build-storybook",
+    "deploy": "gh-pages -d storybook-static"
   },
   "dependencies": {
     "vue": "^3.2.16"
