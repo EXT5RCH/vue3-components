@@ -7,6 +7,19 @@ export default {
     type: {
       control: { type: "select" },
       options: ["text", "password", "email", "number"],
+      description: "inputタイプを設定します",
+    },
+    disabled: {
+      description: "テキストボックスの使用不可を設定します。",
+      defaultValue: false,
+    },
+    label: {
+      description: "キャプションを設定します。",
+      defaultValue: "",
+    },
+    placeholder: {
+      description: "プレースホルダーを設定します。",
+      defaultValue: "",
     },
   },
 };
