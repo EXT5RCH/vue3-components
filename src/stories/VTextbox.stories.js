@@ -1,3 +1,4 @@
+import { ref } from "@vue/reactivity";
 import VTextbox from "../components/VTextbox.vue";
 
 export default {
@@ -27,7 +28,8 @@ export default {
 const Template = (args) => ({
   components: { VTextbox },
   setup() {
-    return { args };
+    const value = ref("");
+    return { args, value };
   },
   template: '<v-textbox v-bind="args" v-model="value" />',
 });
