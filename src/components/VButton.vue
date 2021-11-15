@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { useSlots } from "vue";
-
 interface Props {
   msg: string;
   disabled?: boolean;
