@@ -22,14 +22,14 @@ const props = withDefaults(defineProps<Props>(), {
   disabled: false,
 });
 
-const emits = defineEmits<Emits>();
+const emit = defineEmits<Emits>();
 
 const vmCheckedList = computed({
   get() {
     return props.modelValue;
   },
   set(newValue: string[]) {
-    emits("update:modelValue", newValue);
+    emit("update:modelValue", newValue);
   },
 });
 </script>
