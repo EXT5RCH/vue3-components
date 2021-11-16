@@ -10,6 +10,9 @@ export default {
     disabled: {
       description: "ボタンの使用不可を設定します。",
     },
+    title: {
+      description: "ツールチップが表示されます。",
+    },
     default: {
       description: "デフォルトのslotです。",
     },

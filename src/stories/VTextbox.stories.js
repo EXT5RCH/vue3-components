@@ -19,6 +19,9 @@ export default {
     placeholder: {
       description: "プレースホルダーを設定します。",
     },
+    title: {
+      description: "ツールチップが表示されます。",
+    },
   },
 };
 
