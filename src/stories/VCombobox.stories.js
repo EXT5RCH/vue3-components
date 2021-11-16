@@ -32,9 +32,9 @@ const Template = (args) => ({
 export const Default = Template.bind({});
 Default.args = {
   items: [
-    { label: "赤", value: "red" },
-    { label: "青", value: "blue" },
-    { label: "黄色", value: "yellow" },
+    { label: "赤", value: "red", title: "赤" },
+    { label: "青", value: "blue", title: "青" },
+    { label: "黄色", value: "yellow", title: "黄色" },
   ],
   disabled: false,
 };

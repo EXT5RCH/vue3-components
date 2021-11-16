@@ -1,5 +1,6 @@
 <script setup lang="ts">
 interface Props {
+  title?: string;
   disabled?: boolean;
 }
 
@@ -8,6 +9,7 @@ interface Emits {
 }
 
 withDefaults(defineProps<Props>(), {
+  title: "",
   disabled: false,
 });
 
@@ -19,7 +21,7 @@ const handleClick = () => {
 </script>
 
 <template>
-  <button @click="handleClick" :disabled="disabled">
+  <button @click="handleClick" :title="title" :disabled="disabled">
     <slot>Submit</slot>
   </button>
 </template>

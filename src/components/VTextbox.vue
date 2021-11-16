@@ -6,6 +6,7 @@ interface Props {
   label?: string;
   type: "text" | "password" | "email" | "number";
   placeholder?: string;
+  title?: string;
   disabled?: boolean;
 }
 
@@ -33,7 +34,7 @@ const vmInputText = computed({
 </script>
 
 <template>
-  <label>
+  <label :title="title">
     {{ label }}
     <input
       :type="type"

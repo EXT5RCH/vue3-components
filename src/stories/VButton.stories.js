@@ -27,6 +27,7 @@ const DefaultTemplate = (args) => ({
 export const Default = DefaultTemplate.bind({});
 Default.args = {
   disabled: false,
+  title: "押すと送信されます。",
 };
 
 const TextChangedTemplate = (args) => ({
@@ -40,4 +41,5 @@ const TextChangedTemplate = (args) => ({
 export const TextChanged = TextChangedTemplate.bind({});
 TextChanged.args = {
   disabled: false,
+  title: "Buttonを押してください。",
 };

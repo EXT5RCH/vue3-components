@@ -4,6 +4,7 @@ import { computed } from "@vue/reactivity";
 type SelectItemType = {
   label: string;
   value: string;
+  title?: string;
 };
 
 interface Props {
@@ -36,7 +37,7 @@ const vmSelected = computed({
 
 <template>
   <select v-model="vmSelected" :disabled="disabled">
-    <option v-for="i in items" :key="i.value" :value="i.value">
+    <option v-for="i in items" :key="i.value" :value="i.value" :title="i.title">
       {{ i.label }}
     </option>
   </select>

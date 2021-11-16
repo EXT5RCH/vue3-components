@@ -36,5 +36,6 @@ Default.args = {
   label: "名前",
   type: "text",
   placeholder: "入力してください。",
+  title: "名前",
   disabled: false,
 };

@@ -4,6 +4,7 @@ import { computed } from "@vue/reactivity";
 type RadioType = {
   label: string;
   value: string;
+  title?: string;
 };
 
 interface Props {
@@ -35,7 +36,7 @@ const vmSelected = computed({
 </script>
 
 <template>
-  <label v-for="i in props.items">
+  <label v-for="i in props.items" :title="i.title">
     <input
       type="radio"
       v-model="vmSelected"

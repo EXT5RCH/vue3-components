@@ -4,6 +4,7 @@ import { computed } from "@vue/reactivity";
 type CheckboxItemType = {
   label: string;
   value: string;
+  title?: string;
 };
 
 interface Props {
@@ -19,6 +20,7 @@ interface Emits {
 const props = withDefaults(defineProps<Props>(), {
   modelValue: () => [],
   items: () => [],
+  title: "",
   disabled: false,
 });
 
@@ -35,7 +37,7 @@ const vmCheckedList = computed({
 </script>
 
 <template>
-  <label v-for="i in items" :key="i.value">
+  <label v-for="i in items" :key="i.value" :title="i.title">
     <input
       type="checkbox"
       v-model="vmCheckedList"
